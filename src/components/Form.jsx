@@ -8,6 +8,7 @@ import Image from 'react-bootstrap/Image';
 export default function Form() {
   return (
 <div>
+    //Estructura de Form
       <h1></h1>
     <Container className='mt-5'>
       <Row>

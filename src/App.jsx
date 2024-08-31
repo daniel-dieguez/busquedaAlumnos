@@ -5,6 +5,7 @@ import Form from './components/Form'
 export default function App() {
   return (
     <div>
+        //Lugar donde se establece el componente formula del formulario
         <Form></Form>
     </div>
 

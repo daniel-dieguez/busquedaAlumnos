@@ -10,9 +10,10 @@ export default function Register() {
     const [carnet, setCarnet] = useState ('');
     const [datosA,setDatosA ] = useState(null);
 
+//api 
+const urlumg = 'https://test-deploy-12.onrender.com/estudiantes/'
 
-const urlumg = 'http://localhost:9000/task/'
-
+//que se muestre los datos de la api en la consola
     useEffect(() => {
       axios.get(urlumg).then(response => {
         console.log(response.data)
@@ -27,6 +28,7 @@ const urlumg = 'http://localhost:9000/task/'
         console.log(carnet);
     }
 
+    //busqueda de codigo al momento de ingresar el alumno
     const searchAlumno = () =>{
 
             axios.get(`${urlumg}${carnet}`)
@@ -44,6 +46,7 @@ const urlumg = 'http://localhost:9000/task/'
 
   return (
     <div>
+        //formulario para la busqueda de datos
     <Form.Group className="mb-3">
         <Form.Label>Carnet</Form.Label>
 
